@@ -1,7 +1,7 @@
 databases:
   - name: postgres
     databaseName: railstarter_production
-    user: postgres
+    user: railstarter
 
 services:
   - type: web
