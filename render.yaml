@@ -1,5 +1,5 @@
 databases:
-  - name: railstarter
+  - name: postgres
     databaseName: railstarter_production
     user: postgres
 
