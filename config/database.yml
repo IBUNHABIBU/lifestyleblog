@@ -87,3 +87,4 @@ production:
   database: railstarter_production
   username: railstarter
   password: <%= ENV["RAILSTARTER_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
