@@ -14,14 +14,14 @@
             <i></i>
           </div>
           <div class="input-box">
-            <%= f.file_field :image, required: "required"  %>
+            <%= f.file_field :image %>
             <span>Image</span>
             <i></i>
           </div>
-          <div class="input-box">
-            <span>password Confirmation</span>
-            <i></i>
-          </div>
+          <%# <div class="input-box"> %>
+            <%# <span>password Confirmation</span> %>
+            <%# <i></i> %>
+          <%# </div> %>
           <%= f.submit "Create Article", class: "btn" %>
     <% end %>
   </div>
