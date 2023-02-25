@@ -1,2 +1,25 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+<div class="front">
+   <div class="first-container">
+       <div class="most_rated">
+        <% @most_rated_articles.each do |article| %>
+             
+               <div class="color-overlay"></div>
+              <div class="bg-img" style="background: url(<%= rails_blob_url(article.image) %>)">
+                 <div class="rated_title" id="rated_title">
+                   <%=  link_to "#{article.title}", article_path(article), class:"title-link" %>
+                 </div>
+                 <div class="rated_content">
+                      <%= truncate(article.content, length:200, separator:' ') %>
+                 </div>
+              </div>
+             
+        <% end %>
+       </div>
+      <div class="weather-image">
+           <%= image_tag("weather.jpg", :alt => "weather pic") %>
+      </div>
+   </div>
+   <div class="second-container">
+          <%= render 'article', obj:@recent_articles %>
+   </div>
+</div>
