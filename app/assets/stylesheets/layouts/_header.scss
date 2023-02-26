@@ -9,6 +9,43 @@
     // padding: 1rem 2rem;
     // z-index: 1;
 
+    &__user {
+        .dropdown {
+            position: relative;
+            
+            &:hover {
+                .dropdown-menu {
+                    top: 34px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .menu-right {
+                top: 0;
+                left: 100%;
+            }
+        }
+        .dropdown-menu, .menu-right {
+            position: absolute;
+            background-color: var(--color-header-bg);
+            width: 100%;
+            top: 50%;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        .dropdown-right {
+            &:hover {
+                .menu-right {
+                    top: 34px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
     &__logo {
         // font-size: var(--font-size-xl);
         // position:absolute;
@@ -150,40 +187,7 @@
             // text-align:center;
            
         }
-        .dropdown {
-            position: relative;
-            
-            &:hover {
-                .dropdown-menu {
-                    top: 34px;
-                    opacity: 1;
-                    visibility: visible;
-                }
-            }
-            .menu-right {
-                top: 0;
-                left: 100%;
-            }
-        }
-        .dropdown-menu, .menu-right {
-            position: absolute;
-            background-color: var(--color-header-bg);
-            width: 100%;
-            top: 50%;
-            left: 0;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease-in-out;
-        }
-        .dropdown-right {
-            &:hover {
-                .menu-right {
-                    top: 34px;
-                    opacity: 1;
-                    visibility: visible;
-                }
-            }
-        }
+  
     }
     a {
         text-decoration: none;
