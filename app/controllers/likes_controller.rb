@@ -1,7 +1,7 @@
 class LikesController < ApplicationController
-    before_action :require_signin
+    before_action :require_signin, only: [:create, :destroy]
+    before_action :set_article, only: [:create, :destroy]
     def create
-        @article = Article.find(params[:article_id])
         @article.likes.create!(user: current_user)
         flash[:success] = 'Glad! you liked it!'
         redirect_to @article
@@ -11,7 +11,12 @@ class LikesController < ApplicationController
         like = current_user.likes.find(params[:id])
         like.destroy
         flash[:danger] = 'Sorry! you unliked it!'
-        @article = Article.find(params[:article_id])
         redirect_to @article
       end
+
+    private 
+    def set_article 
+        
+        @article = Article.find(params[:article_id])
+    end
 end
