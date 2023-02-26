@@ -181,6 +181,10 @@ setting enviroment variables in heroku I used heroku config:set RAILS_MASTER_KEY
 4. Rails: ActiveSupport::MessageEncryptor::InvalidMessage
   remove credentials.yml.enc and run rails credentials:edit again
 
+# implement like button
+
+here we use many to many association
+
 ## Live link
 
 [Live Demo ](https://final-car-rent-api.herokuapp.com/api/v1/cars) of the project
