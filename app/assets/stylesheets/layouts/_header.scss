@@ -12,6 +12,7 @@
     &__user {
         ul {
             display: flex;
+            justify-content: space-between;
             .dropdown {
                 position: relative;
                 
