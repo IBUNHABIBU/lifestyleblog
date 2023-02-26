@@ -1,5 +1,6 @@
 <div class="form form--mid">
   <div class="form__container">
+  <h2>Create new category</h2>
     <%= form_for(@category) do |f| %>
      <%= render 'shared/errors', object: @category %>
           <div class="input-box">
@@ -10,23 +11,10 @@
           <div class="input-box">
             
             <%= f.email_field :email, required: "required" %>
-            <span>Email</span>
+            <span>Priority</span>
             <i></i>
           </div>
-          <div class="input-box">
-            <%= f.password_field :password, required: "required"  %>
-            <span>Password</span>
-            <i></i>
-          </div>
-          <div class="input-box">
-            <%= f.password_field :password_confirmation, required: "required" %>
-            <span>password Confirmation</span>
-            <i></i>
-          </div>
-  
-       
           <%= f.submit "Update account", class: "btn" %>
-          <% end %>
     <% end %>
   </div>
 </div>
