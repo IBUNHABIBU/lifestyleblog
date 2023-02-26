@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'categories/index'
+  get 'categories/show'
+  get 'categories/new'
   get 'signup', to: 'users#new'
   resources :users
   resources :categories
