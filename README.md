@@ -184,6 +184,7 @@ setting enviroment variables in heroku I used heroku config:set RAILS_MASTER_KEY
 # implement like button
 
 here we use many to many association
+join table is likes is the table between user and article
 
 ## Live link
 
