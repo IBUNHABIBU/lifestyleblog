@@ -1,57 +1,37 @@
-<header>
-    <h1 class="navlogo">LiFEsTlye<span class="logo-dot"></span></h2>
-
-    <div class="category-list"> 
-        <ul class="category-ul">
-          <li class="category-li">
-            <%= link_to "Home" , root_path, class:"cat-link-names", id:"home-btn" %>
-          </li>
-        </ul>
-
-        <% Category.priority_cat.each do |category| %>
-            <ul class="category-ul">
-                <li class="category-li">
-                  <%= link_to "#{category.name}" , category_path(category), class:"cat-link-names" %>
+<header class="header">
+    <%= link_to 'LOGO', root_path, class: "header__logo" %>
+    <% items = ['Home', 'Dropdown Menu', 'Mega menu', 'Blog', 'About' ] %>
+    <nav>
+        <ul class="header__menu">
+                <li>
+                  <%= link_to 'Home', root_path, class: "header__menu__item" %>
                 </li>
-            </ul>
+                <li class="dropdown">
+                    <%= link_to 'Dropdown Menu', '#', class: "header__menu__item" %>
+                    <%= render 'layouts/header/dropdown' %>
+                </li>
+                <li class="dropdown">
+                    <%= link_to 'Dropdown Menu', '#', class: "header__menu__item" %>
+                    <%= render 'layouts/header/dropdown' %>
+                </li>
+               
+                <li>
+                  <%= link_to 'About', '#', class: "header__menu__item" %>
+                </li>
+                <% if current_user %>
+                <li>
+                  <%= link_to 'Logout', logout_path, data: { turbo_method: :delete }, class: "header__menu__item" %>
+                <li>
+                <% else %>
+                <li>
+                  <%= link_to 'Login', login_path, class: "header__menu__item" %>
+                </li>
+                <li>
+                  <%= link_to 'Register', new_user_path, class: "header__menu__item" %>
+                </li>
+                <% end %>
+        </ul>
+    </nav>
+    <div class="user">
     </div>
-
-        <% end %>
-  <ul class="authentication">
-  
-    <% if current_user %>
-        <div class="auth-div">
-          <li class="auth-li">
-            <div class="dropdown">
-                <span class="dropbtn"><%= link_to "All" ,categories_path , class:"auth-link" %></span>
-                <div class="dropdown-content">
-                  <%= link_to "Category", categories_path, class:"auth-link" %>
-                  <%= link_to "Article", articles_path, class:"auth-link" %>
-                </div>
-            </div>
-          </li>
-
-          <li class="auth-li">
-              <div class="dropdown">
-                <span class="dropbtn"><%= link_to "Create" ,categories_path , class:"auth-link" %></span>
-                <div class="dropdown-content">
-                  <%= link_to "Category", new_category_path, class:"auth-link" %>
-                  <%= link_to "Article", new_article_path, class:"auth-link" %>
-                </div>
-              </div>
-          </li>
-          <li class="auth-li">
-                <%= link_to "Log out", logout_path, method: :delete, class:"auth-link" %>
-          </li>
-        </div>
-    <% else %>
-        <div class="auth-div">
-            <li class="auth-li">
-              <%= link_to 'Login', login_path , class:"auth-link vertical-line" %>
-              <%= link_to 'Register', signup_path , class:"auth-link"%>
-            </li>
-        </div>
-    <% end %>
-      <i class="fas fa-search "></i>
-  </ul>
 </header>
