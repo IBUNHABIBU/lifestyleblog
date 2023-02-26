@@ -185,6 +185,12 @@ setting enviroment variables in heroku I used heroku config:set RAILS_MASTER_KEY
 
 here we use many to many association
 join table is likes is the table between user and article
+to solve n+1 query I have used through method
+article 
+has_many :likers, through: :likes, source: :user
+
+user
+ has_many :liked_articles, through: :likes, source: :article
 
 ## Live link
 
