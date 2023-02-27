@@ -43,6 +43,15 @@
                 color: var(--color-text-header);
             }
         }
+
+        &__item {
+            &--line {
+                border-right: 4px solid #787980;
+                padding-right: 0.2rem;
+                margin-right: 2px;
+            }
+        }
+        
     }
 
     &__user {
@@ -50,10 +59,17 @@
         position: relative;
         ul {
           display: flex;
-          .fa-search {
-            position: absolute;
-            bottom: 12rem;
-            right: 2rem;
+          align-items: center;
+          justify-content: space-between;
+
+          li {
+            width: 6rem;
+
+            .fa-search {
+                position: relative;
+                top: 4px;
+                left: 3rem;
+            }
           }
         }
     }
