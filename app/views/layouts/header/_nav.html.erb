@@ -2,36 +2,35 @@
  <h2 class="header__logo">LiFEsTlye<span class="header__logo__dot"></span></h2>
     <nav>
         <ul class="header__menu">
-        <% @priority_cat.each do |category| %>
+        <% Category.priority_cat.each do |category| %>
                 <li>
-                  <%= link_to 'Home', root_path, class: "header__menu__item" %>
+                  <%= link_to category.name, root_path, class: "header__menu__item" %>
                 </li>
         <% end %>  
         </ul>
     </nav>
     <div class="header__user">
-    <ul>
-    
-    <% if current_user %>
-    <li class="dropdown">
-                    <%= link_to 'All', '#', class: "header__menu__item" %>
-                    <%= render 'layouts/header/dropdown' %>
-                </li>
-                <li class="dropdown">
-                    <%= link_to 'Create', '#', class: "header__menu__item" %>
-                    <%= render 'layouts/header/dropdown' %>
-                </li>
-                <li>
-                  <%= link_to 'Logout', logout_path, data: { turbo_method: :delete }, class: "header__menu__item" %>
-                <li>
-                <% else %>
-                <li>
-                  <%= link_to 'Login', login_path, class: "header__menu__item" %>
-                </li>
-                <li>
-                  <%= link_to 'Register', new_user_path, class: "header__menu__item" %>
-                </li>
-                <% end %>
-                </ul>
+      <ul>
+        <% if current_user %>
+          <li class="dropdown">
+            <%= link_to 'All', '#', class: "header__menu__item" %>
+            <%= render 'layouts/header/dropdown' %>
+          </li>
+          <li class="dropdown">
+              <%= link_to 'Create', '#', class: "header__menu__item" %>
+              <%= render 'layouts/header/dropdown' %>
+          </li>
+          <li>
+            <%= link_to 'Logout', logout_path, data: { turbo_method: :delete }, class: "header__menu__item" %>
+          <li>
+        <% else %>
+          <li>
+            <%= link_to 'Login', login_path, class: "header__menu__item" %>
+          </li>
+          <li>
+            <%= link_to 'Register', new_user_path, class: "header__menu__item" %>
+          </li>
+        <% end %>
+      </ul>
     </div>
 </header>
