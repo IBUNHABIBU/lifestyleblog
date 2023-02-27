@@ -23,8 +23,8 @@
 
     &__menu {
         display: flex;
-
         li {
+            padding-left: 1rem;
             &:first-child {
                 a {
                     color:#f76107;
