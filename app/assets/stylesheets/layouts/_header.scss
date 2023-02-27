@@ -23,6 +23,26 @@
 
     &__menu {
         display: flex;
+
+        li {
+            &:first-child {
+                a {
+                    color:#f76107;
+                }
+            }
+        }
+
+        &__item {
+            text-align:center;
+            text-decoration:none;
+            font-size:1.7rem;
+            text-transform:uppercase;
+            color:#787980;
+
+            &:hover {
+                color: var(--color-text-header);
+            }
+        }
     }
 
     &__user {
