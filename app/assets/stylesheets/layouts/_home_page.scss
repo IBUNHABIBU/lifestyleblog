@@ -1,0 +1,80 @@
+.home {
+    width: 100%;
+    height: 120vh;
+
+    &__top {
+        display: flex;
+        height: 320px;
+    }
+
+    .slider {
+        width: 70%;
+
+        &__bg {
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        &__overlay {
+            width:69.4%;
+            height: 59.0%;
+            position:absolute;
+            background:#000000;
+            opacity:0.7;
+            background-size:cover;
+            z-index:4;
+        }
+
+        &__title {
+            a {
+                color:#d15002;
+                font-weight:bold;
+                font-size: 2.1rem;
+                margin-left:2rem;
+                position:relative;
+                top:22rem;
+                z-index:5;
+
+                &:hover {
+                    color:#fe6001;
+                    text-decoration:none;
+                }
+            }
+        }
+
+        &__content {
+            color:white;
+            font-size: 1.8rem;
+            position:relative;
+            top:23rem;
+            margin-left:2rem;
+            z-index:5;
+        }
+    }
+
+    .weather {
+      height:320px;
+      width:30%;
+
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__recent {
+        
+        &__container {
+            display: flex;
+
+            &__bg {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size:400px 300px;
+            }
+        }
+    }
+}
