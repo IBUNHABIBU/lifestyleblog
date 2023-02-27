@@ -97,10 +97,14 @@
                         color:#fff;
                         text-decoration: none;
                         position:relative;
-                        // bottom: 28.8rem;
                         top:1rem;
                         left: 1.5rem;
                         z-index:15;
+
+                        &:hover {
+                            color:#ff1;
+                            text-decoration:none;
+                        }
                     }
                     &__title {
                         
