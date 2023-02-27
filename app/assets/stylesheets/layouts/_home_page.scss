@@ -1,6 +1,6 @@
 .home {
     width: 100%;
-    height: 120vh;
+    height: 100vh;
 
     &__top {
         display: flex;
@@ -69,7 +69,7 @@
     }
 
     &__recent {
-        
+        display: flex;
         &__overlay {
             width: 100%;
             height: 100%;
@@ -78,9 +78,9 @@
         }
 
         &__container {
-            display: flex;
             border: 4px solid black;
-
+            width:100%;
+            height:218px;
             &__bg {
                 width: 100%;
                 height: 100%;
