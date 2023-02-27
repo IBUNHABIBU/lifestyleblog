@@ -3,5 +3,5 @@ class Category < ApplicationRecord
     validates :priority, presence: true, uniqueness: true
     has_many :article_categories
     has_many :articles, through: :article_categories
-    scope :priority_cat, -> { order('priority') }
+    scope :priority_cat, -> { order('priority').limit(7) }
 end
