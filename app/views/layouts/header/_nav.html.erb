@@ -1,17 +1,12 @@
 <header class="header">
  <h2 class="header__logo">LiFEsTlye<span class="header__logo__dot"></span></h2>
-    <% items = ['Home', 'Dropdown Menu', 'Mega menu', 'Blog', 'About' ] %>
     <nav>
         <ul class="header__menu">
+        <% @priority_cat.each do |category| %>
                 <li>
                   <%= link_to 'Home', root_path, class: "header__menu__item" %>
                 </li>
-                
-               
-                <li>
-                  <%= link_to 'About', '#', class: "header__menu__item" %>
-                </li>
-                
+        <% end %>  
         </ul>
     </nav>
     <div class="header__user">
