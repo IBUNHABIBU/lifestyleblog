@@ -1,8 +1,26 @@
 .header {
     display: flex;
-    margin-bottom: 1px;
-    border-bottom: 2px solid black;
+    // margin-bottom: 1px;
+    // border-bottom: 0.4rem solid var(--color-main);
     justify-content: space-between;
+    background-image: linear-gradient(
+        to bottom, 
+        #fff 0%,
+        #fff 80%,
+        #fff 80%,
+        #fff 90%,
+        #836a6a 0%
+    );
+
+    &::before {
+        content: "";
+        width: 18rem;
+        height: 0.4rem;
+        background-color: red;
+        position: absolute;
+        top: 4rem;
+    }
+    
 
     &__logo {
         padding:3px;
@@ -25,6 +43,7 @@
         display: flex;
         li {
             padding-left: 1rem;
+            list-style: none;
             &:first-child {
                 a {
                     color:#f76107;
@@ -64,6 +83,7 @@
 
           li {
             width: 6rem;
+            list-style: none;
 
             .fa-search {
                 position: relative;
