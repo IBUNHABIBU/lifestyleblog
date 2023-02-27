@@ -7,7 +7,7 @@
         </li>
         <% Category.priority_cat.each do |category| %>
                 <li>
-                  <%= link_to category.name, root_path, class: "header__menu__item" %>
+                  <%= link_to category.name, root_path, class: "header__menu__item " %>
                 </li>
         <% end %>  
         </ul>
@@ -20,7 +20,7 @@
             <%= render 'layouts/header/dropdown' %>
           </li>
           <li class="dropdown">
-              <%= link_to 'Create', '#', class: "header__menu__item" %>
+              <%= link_to 'Create', '#', class: "header__menu__item dashboard" %>
               <%= render 'layouts/header/dropdown' %>
           </li>
           <li>

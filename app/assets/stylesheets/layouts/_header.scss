@@ -81,11 +81,28 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
+          
 
           .dropdown {
             position: relative;
             display: flex;
             flex-direction: column;
+            background-color: white;
+            width: 100%;
+
+            &:hover {
+              .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                top: 34px;
+              }
+            }
+
+            .dashboard {
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+            }
           }
 
           li {
@@ -104,11 +121,22 @@
                 flex-direction: column;
                 position: absolute;
                 width: 100%;
+                padding-left: 0.9rem;
                 top: 50px;
                 left: 0;
                 opacity: 0;
                 visibility: hidden;
+                background-color: white;
+                z-index: 12;
+
+                li {
+                    width: 100%;
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
             }
+
           }
         }
     }
