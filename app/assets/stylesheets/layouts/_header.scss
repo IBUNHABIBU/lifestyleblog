@@ -21,25 +21,6 @@
         top: 4.3rem;
     }
     
-
-    .logo {
-        padding:3px;
-        float:left;
-        margin-left:2px;
-        margin-top:10px;
-        color:var(--color-main);
-        font-size:2.5rem;
-
-        &__dot {
-            height: 10px;
-            width: 10px;
-            background-color: #f76107;
-            border-radius: 50%;
-            display: inline-block;
-            margin-left: 0.5rem;
-        }
-    }
-
     &__menu {
         display: flex;
         li {
