@@ -31,20 +31,19 @@
                 <% end %>
             <% end %>
             <span class="likes__count">
-              <%= @likers.size %>
+              <%= pluralize(@likers.size, "like")%>
             </span>
             <p>
               <strong>Author:</strong>
               <%= @article.user.name %>
             </p>
             <% if @article.categories.any? %>
-                <div class="cat-s">
+                <div class="category">
                     <p>
-                        <span class="categories">Categories: </span>
+                        <span class="category__title">Categories: </span>
                         <%= render @article.categories %>
                     </p>
                 </div>
-
             <% end %>
 
             <%= link_to 'Delete this article', article_path(@article), class:"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
