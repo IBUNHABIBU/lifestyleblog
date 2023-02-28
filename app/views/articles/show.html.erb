@@ -16,7 +16,7 @@
                     <div>
                       <span>
                         <p>
-                          <%= button_to "Unlike", article_like_path(@article, @current_like), class:"btn btn--warning", method: :delete %>
+                          <%= button_to "Unlike", article_like_path(@article, @current_like), class:"btn btn--unlike", method: :delete %>
                         </p>
                       </span>
                     </div>
@@ -24,7 +24,7 @@
                     <div>
                       <span>
                         <p>
-                          <%= button_to "like" ,article_likes_path(@article), class:"btn btn-primary" %>
+                          <%= button_to "like" ,article_likes_path(@article), class:"btn btn--like" %>
                         </p>
                       </span>
                     </div>

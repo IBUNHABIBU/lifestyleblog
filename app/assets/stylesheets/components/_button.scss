@@ -13,4 +13,16 @@
     &--mid {
         width: 100%;
     }
+
+    &--unlike {
+        background-color: #F0AD4E;
+        color: white;
+        width: 8rem;
+    }
+
+    &--like {
+        background-color: #008cba;
+        color: white;
+        width: 8rem;
+    }
 }
