@@ -1,0 +1,21 @@
+.show {
+    &__container {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        background-image:url('<%= url_for(@article.image) %>');
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+
+        .content {
+            background:#f8f8f8;
+            font-size:2rem;
+            padding:2rem;
+
+            p {
+                color:#333;
+            }
+        }
+    }
+}
