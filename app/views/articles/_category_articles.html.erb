@@ -10,7 +10,7 @@
                 <% end %>
                 <h4 class="content__title"><%= link_to article.title , article_path(article) %></h3>
                 <p class="content__body"><%= truncate(article.content, length:200, separator:' ') %></p>
-                <%= link_to 'read more', article_path%>
+                <%= link_to 'read more', article_path(article) %>
             </div>
         </div>
    <% end %>
