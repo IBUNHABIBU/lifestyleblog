@@ -1,13 +1,13 @@
 footer {
     background-color: #4e443f;
-    height:60px;
+    height:70px;
     margin-top:auto;
     padding-bottom:1rem;
     z-index:4;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid red;
+    color: white;
 
     .footer {
         &__icons {
