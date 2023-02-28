@@ -12,7 +12,7 @@
                 height:268px;
 
                 img {
-                    width:100%;
+                    width:300px;
                     height:268px;
                 }
 
@@ -50,18 +50,20 @@
                     }
                     
                     &__body {
-                        font-size: 2rem;
+                        font-size: 1rem;
+                        color:#756d69;
                     }
-                  &:nth-child(3) {
-                    display: flex;
-                    flex-direction: row-reverse;
-                  }
+                 
+               }
+               &:nth-child(3) {
+                display: flex;
+                flex-direction: row-reverse;
+              }
 
-                  &:nth-child(4) {
-                    display: flex;
-                    flex-direction: row-reverse;
-                  }
-                }
+              &:nth-child(4) {
+                display: flex;
+                flex-direction: row-reverse;
+              }
             }
         }
     }
