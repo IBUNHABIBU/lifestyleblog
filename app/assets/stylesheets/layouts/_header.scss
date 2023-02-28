@@ -1,7 +1,6 @@
 .header {
     display: flex;
     align-items: center;
-    // border-bottom: 0.4rem solid var(--color-main);
     justify-content: space-between;
     background-image: linear-gradient(
         to bottom, 
@@ -48,7 +47,7 @@
         &__item {
             &--line {
                 border-right: 4px solid #787980;
-                padding-right: 0.2rem;
+                padding-right: 0.6rem;
                 margin-right: 2px;
             }
         }
@@ -94,8 +93,6 @@
             .fa-search {
                 position: relative;
                 top: 0.2rem;
-                // left: 2rem;
-                // margin-left: 2rem;
                 font-size: 1.6rem;
                 color: #f76107;
             }
