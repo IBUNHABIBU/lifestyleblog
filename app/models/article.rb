@@ -9,4 +9,8 @@ class Article < ApplicationRecord
   has_many :likers, through: :likes, source: :user
   scope :recent, -> { order('created_at DESC').limit(4) }
   scope :most_rated, -> { order('likes_count DESC').limit(1) }
+
+  def likes_count
+    likes.count
+  end
 end
