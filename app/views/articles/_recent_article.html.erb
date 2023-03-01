@@ -1,4 +1,4 @@
-<div class="home_recent__overlay"></div>
+<div class="home__recent__overlay"></div>
 <% obj.each do |article| %>
     <div class="home__recent__container">
         <div class="home__recent__container__bg" <% if article.image.attached? %>style="background: url(<%= rails_blob_url(article.image) %>)"<% end %>>
