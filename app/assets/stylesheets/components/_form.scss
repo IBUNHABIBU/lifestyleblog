@@ -8,6 +8,10 @@
         @include width_and_height($height:74vh);
     }
 
+    &--large {
+        @include width_and_height($height:78vh);
+    }
+
     &::before {
         content: "";
         position: absolute;
