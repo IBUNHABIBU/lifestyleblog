@@ -14,6 +14,10 @@
         width: 100%;
     }
 
+    &--lg {
+        width: 100rem;
+    }
+
     &--unlike {
         background-color: #F0AD4E;
         color: white;
@@ -29,6 +33,6 @@
     &--danger {
         background-color: #d9534f;
         color: white;
-        width: 4rem;
+        width: 18rem;
     }
 }
