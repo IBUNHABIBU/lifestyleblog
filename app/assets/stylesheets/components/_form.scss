@@ -4,6 +4,10 @@
     background-color: var(--color-header-bg);
     overflow: hidden;
 
+    &--sm {
+        @include width_and_height($height:56vh);
+    }
+
     &--mid {
         @include width_and_height($height:74vh);
     }
