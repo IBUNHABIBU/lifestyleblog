@@ -3,7 +3,7 @@
       <div class="slider">
          <% @most_rated_articles.each do |article| %>
             <div class="slider__overlay"></div>
-            <div class="slider__bg" <% if article.image.attached? %>style="background: url(<%= rails_blob_url(article.image) %>),  background-size: 50px 50px"<% end %>>
+            <div class="slider__bg" <% if article.image.attached? %>style="background: url(<%= rails_blob_url(article.image) %>)"<% end %>>
                <div class="slider__bg__title" id="rated_title">
                   <%=  link_to "#{article.title}", article_path(article), class:"title-link" %>
                </div>
