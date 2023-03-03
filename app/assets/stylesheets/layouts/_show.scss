@@ -5,11 +5,11 @@
         justify-content:center;
 
         .bg-image {
-            background-image:url('<%= url_for(@article.image) %>');
-            // background-position:center;
-            // background-repeat:no-repeat;
-            // background-size:cover;
-            background-color: black;
+           img {
+                width:300px;
+                height:300px;
+                object-fit:cover;
+           }
         }
 
         .content {
