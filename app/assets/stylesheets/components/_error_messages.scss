@@ -28,9 +28,24 @@ section {
     display: flex;
     justify-content: center;
 
-    .flash.alert{   
+    .flash{   
         border: 1px solid rgb(222, 222, 222);
-        background-color:   #f8d7da;
-        color: black
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+    .notice {
+        background-color: #d4edda;
+        color: black;
+    }
+
+    .alert {
+        background-color: #f8d7da;
+        color: black;
+    }
+
+    .success {
+        background-color: #d4edda;
+        color: black;
     }
 }
