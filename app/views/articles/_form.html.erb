@@ -1,7 +1,7 @@
 <div class="form form--mid">
   <div class="form__container">
   <h2>Create article</h2>
-    <%= form_for(@article) do |f| %>
+    <%= form_for(@article, data: { turbo: false }) do |f| %>
      <%= render 'shared/errors', object: @article %>
           <div class="input-box">
             <%= f.text_field :title %>
