@@ -25,12 +25,12 @@ section {
 }
 
 .flash-message {
-    border: 1px solid rgb(222, 222, 222);
-    background-color:   #f8d7da;
     display: flex;
     justify-content: center;
 
-    .flash.alert{
+    .flash.alert{   
+        border: 1px solid rgb(222, 222, 222);
+        background-color:   #f8d7da;
         color: black
     }
 }
