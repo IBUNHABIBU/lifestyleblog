@@ -1,15 +1,15 @@
 production:
-  cloud_name: <%= Rails.application.credentials.dig(:cloudinary, :cloud_name) %>
-  api_key: <%= Rails.application.credentials.dig(:cloudinary, :api_key) %>
-  api_secret: <%= Rails.application.credentials.dig(:cloudinary, :api_secret) %>
+  cloud_name: dubl5onvo
+  api_key: 769113622111229
+  api_secret: Hn9u7sxsnGC-x0-C8uVARBZGKEE
   enhance_image_tag: true
   static_file_support: false
   cdn_subdomain: true
 
   development:
-  cloud_name: <%= Rails.application.credentials.dig(:cloudinary, :cloud_name) %>
-  api_key: <%= Rails.application.credentials.dig(:cloudinary, :api_key) %>
-  api_secret: <%= Rails.application.credentials.dig(:cloudinary, :api_secret) %>
+  cloud_name: dubl5onvo
+  api_key: 769113622111229
+  api_secret: Hn9u7sxsnGC-x0-C8uVARBZGKEE
   enhance_image_tag: true
   static_file_support: false
   cdn_subdomain: true
