@@ -179,7 +179,10 @@ so instead of @car = current_user.cars.build(car_params)  I used @car = Car.new(
 setting enviroment variables in heroku I used heroku config:set RAILS_MASTER_KEY = 'cat config/master.key' insead of using the backticks ``
 
 4. Rails: ActiveSupport::MessageEncryptor::InvalidMessage
-  remove credentials.yml.enc and run rails credentials:edit again
+  remove credentials.yml.enc and run rails credentials:edit again 
+
+6. The error message "Must supply api_key" 
+  This was due to wrong indentation in the cloudinary.yml file
 
 # implement like button
 
