@@ -8,9 +8,9 @@ class Article < ApplicationRecord
   has_many :likes, dependent: :destroy
   has_many :likers, through: :likes, source: :user
   scope :recent, -> { order('created_at DESC').limit(4) }
-  scope :most_rated, -> { order('likes_count DESC').limit(1) }
+  scope :most_rated, -> { left_joins(:likes)
+    .group('articles.id')
+    .order('COUNT(likes.id) DESC')
+    .first }
 
-  def likes_count
-    likes.count
-  end
 end
