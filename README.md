@@ -32,8 +32,6 @@ Building this project is very important  because:
 ![screenshot](https://github.com/IBUNHABIBU/lifestyle_articles/blob/dev/app/assets/images/catshow.png)
 ![screenshot](https://github.com/IBUNHABIBU/lifestyle_articles/blob/dev/app/assets/images/newarticle.png)
 
-
-
 ## Built with 
 * Ruby on Rails
 * Bootstrap
