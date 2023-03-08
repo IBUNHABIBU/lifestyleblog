@@ -3,238 +3,136 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-<br />
+
 
 <p align="center">
-  <a href="git@github.com:IBUNHABIBU/TZ-social-events-booking.git">
-    <p align="center">
-      <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/rails/rails.png" alt="rails" width="100" height="100">
+  <a href="git@github.com:IBUNHABIBU/platform-game.git">
+    <p align="center"> <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/rails/rails.png" alt="Ruby on rails" width="100" height="100"> </p>
   </a>
 
-  <h2 align="center"> RAILS PROJECT TEMPLATE</h2>
-  <h3 align="center"> This is the template to replicate all my projects</h3>
+  <h2 align="center">  Lifestyle articles</h2>
+  <h3 align="center"> Building a Rails website to post lifestyle articles </h3>
 
   <p align="center">
-    <a href="https://github.com/IBUNHABIBU/TZ-social-events-booking/issues">Report Bug</a>
-    <a href="https://github.com/IBUNHABIBU/TZ-social-events-booking/issues">Request Feature</a>
+    <a href="https://github.com/IBUNHABIBU/lifestyle_articles/issues">Report Bug</a>
+    <a href="https://github.com/IBUNHABIBU/lifestyle_articles/issues">Request Feature</a>
   </p>
 </p>
 
+This is the Capstone project. It is done after completion of
+Microverse Main technical curriculum section. 
+Building this project is very important  because:
 
-## Table of Contents
+* It's a real-world-like project, built with business specifications 
+* that will look  nice in your portfolio and
+* You will get feedback about the achievement of technical and soft 
+  skills gained during this section of the program.
 
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Features](#features)
-* [Requirements](#requirements)
-* [Useful Commands](#useful-commands)
-* [Live Link](#Live-link)
-* [Contact](#Authors)
-* [Acknowledgements](#Acknowledgements)
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-#### Starter code
-
-This is the starter code for all my rails project to replicate the same structure and style for all my projects.
+![screenshot](https://github.com/IBUNHABIBU/lifestyle_articles/blob/development/app/assets/images/Homepage.png)
+![screenshot](https://github.com/IBUNHABIBU/lifestyle_articles/blob/development/app/assets/images/catshow.png)
+![screenshot](https://github.com/IBUNHABIBU/lifestyle_articles/blob/development/app/assets/images/newarticle.png)
 
 
-### Project specifications
-It has all the features that I need to build a rails project
 
-
-### Features
-- [] User authentication
-    - [] Sign up/Sign in with username and password/ Sign in with Facebook/twitter/github
-    - [] Reset password
-    - [] Forgot password
-    - [] Remember me
-    - [] Email confirmation
-    - [] Email notifications
-    - [] OTP authentication, 2FA, 2SV, authenticator app, SMS, email
-
-- [] Clean code, dry, BEM, SASS, loop
-- [x] Mega Menu, footer, sidebar
-- [x] Responsive design
-- [] Search
-- [] Pagination
-- [] Filter
-- [] Sort
-- [] Rating
-- [] Comment
-- [] Like
-- [] Follow
-- [] Share
-- [] Favorite
-- [] Bookmark
-- [] Upload image
-- [] Upload video
-- [x] Upload audio
-- [x] Upload file
-
-### Api end points
-
-<!-- | Endpoint | Description |
-|---------|-------------|
-| `https://final-capstone-rails-api.herokuapp.com/` | baseUrl |
-| `baseUrl/users` | users resource |
-| `baseUrl/logout` | logout |
-| `baseUrl/logged_in` | login |
-| `baseUrl/api/v1/cars` | cars resource |
-| `baseUrl/api/v1/bookings` | bookings resource | -->
-
-  
-<h3 align="center"> Entity Relationship Diagram (ERD) </h3>
-
-![screenshot](https://github.com/IBUNHABIBU/car-rent-booking-api/blob/rails-api-setup/app/assets/ERD.png)
-
-<!-- BUILD WITH -->
-## Built With
-
-This project was built using these technologies.
+## Built with 
 * Ruby on Rails
+* Bootstrap
+* RSpec 
 
+## Features 
+  * Users 
+    * Signup/login/logout its simple only username is required 
+    * Create categories
+    * Create articles with images
+    * have many articles 
+  * Articles 
+     * Belongs to user
+     * Have many and belongs categories
+     * Have many likes 
+     * The most voted articles is the first to be displayed with big picture in home page  
+     * Other articles are displayed with their background images in order of most recent.
+ * Categories 
+    * Have many and belongs to articles 
+    * All categories are displayed in navbar according to their priority
+  * Likes 
+    * Belongs to user
+    * Belongs to article
 
-### Requirements
-* Ruby
-* Ruby on Rails
-* Postgresql
-* SASS
-* Rspec
-* Rubocop
-* Capybara
+## Next version 
+  * mobile responsive
+  * admin requirement
+  * same user is able to delete his own article
 
+## Requirement 
+* Ruby '~>3.1.0'
+* Rails '~>7.0.3' 
+* PostgreSQL 9.2.24
 
-### How to Install 
-
-To run this locally, clone the repository, navigate to its containing directory.
-
-#### Follow these commands step by step:-
-
-`
- git@github.com:IBUNHABIBU/car-rent-booking.git
-`
-
-`
-cd car-rent-booking
-`
-
- `$bundle install --without production`
-
- `$sudo service postgresql start`
+## Usage
+Clone this repository and run the following commands \
+ `$bundle install --without-production` 
  
- `$rails db:setup`
-
- `$rails db:migrate`
+ `$sudo service postgresql start` 
  
- `$rails server`
+ `$rails db:migrate` 
  
-Enjoy playing it.
+ `$rails s ` 
+ 
+then open http://localhost:3000/
 
-### Testing
+## Run tests
+Navigate to the project folder make sure Rspec is installed and then run the following command 
 
-Navigate to the project folder make sure Rspec is installed and then run the following command
+`$rspec -f d` 
 
- `$rspec -f d `
+## [Live demo](https://lifestylearticle.herokuapp.com/ "Of the project") of the project
 
+## link to  [Video presentation](https://www.loom.com/share/ee056e3f2c984839a9c8a463381c46e5 "Loom")
 
-## Useful Commands
+# Entity Relationship Diagram (ERD)
 
-| Command | Description |
-|---------|-------------|
-| `rails new . --css=sass --javascript=esbuild --database=postgresql` | create new project inside current directory |
-| `bundle install` | Install project dependencies |
-| `sudo service postgresql start` | Starting the database |
-| `rails db:migrate` | Database migration |
-| `rails server` | start the server |
-| `rubocop -a` | Fix all the lint errors automatically |
-| `bundle exec rspec` | Run rspec tests |
-| `EDITOR='code --wait' rails credentials:edit` | Edit credentials |
-| `rails routes | grep users` | check routes of the specific resource |
+![screenshot](https://github.com/IBUNHABIBU/lifestyle_articles/blob/feature2/app/assets/images/ERD__articles.png)
 
-<!-- ### How to play -->
-
-
-### Challenges
-1. 
-
-![screenshot](https://github.com/IBUNHABIBU/car-rent-booking-api/blob/dev/app/assets/Errors.PNG)
-      solution
-
-      bundle config --delete bin
-
-      bundle install --binstubs
-<!-- CONTACT -->
-
-2. Upload image in local was working but not in production
-
-it causes the error undefined cars for nil class
-
-Solution
-I removed the association btn user model and car model
-so instead of @car = current_user.cars.build(car_params)  I used @car = Car.new(car_params)
-
-3. Another cause of blocked by cors
-
-setting enviroment variables in heroku I used heroku config:set RAILS_MASTER_KEY = 'cat config/master.key' insead of using the backticks ``
-
-4. Rails: ActiveSupport::MessageEncryptor::InvalidMessage
-  remove credentials.yml.enc and run rails credentials:edit again 
-
-6. The error message "Must supply api_key" 
-  This was due to wrong indentation in the cloudinary.yml file
-
-# implement like button
-
-here we use many to many association
-join table is likes is the table between user and article
-to solve n+1 query I have used through method
-article 
-has_many :likers, through: :likes, source: :user
-
-user
- has_many :liked_articles, through: :likes, source: :article
-
-## Live link
-
-[Live Demo ](https://final-car-rent-api.herokuapp.com/api/v1/cars) of the project
-
-## future features
-
-- slider
-- temperature
-
-## Authors
-
-👤 **Salum Habibu** 
-    
+## Author
 * Github: [IBUNHABIBU](https://github.com/IBUNHABIBU)
 * Twitter: [@ibunhabibu](https://twitter.com/Ibunhabibu)
 * LinkedIn: [Salum Habibu Kombo](https://www.linkedin.com/in/salum-habibu/)
 
-## Show your support
+## your support 
+Give a :star: if you liked this project 
+## Acknowledgments
+Credits go to
 
-Give a :star: if you like this project!
+- [Nelson Sakwa](https://www.behance.net/gallery/14554909/liFEsTlye-Mobile-version) who designed this template on [behance.net](https://www.behance.net/gallery/14554909/liFEsTlye-Mobile-version)
+- My mentor Raphael Noriode for technical assistance
+- All Microverse TSEs for their feedback that make me to improve technically
 
+# Challenges I faced
+ -Edit the credentials
+   EDITOR=vim rails credentials:edit
+   sudo apt-get install vim
+  
+  rbenv: version `ruby-2.6.3' is not installed
+  `solution: rbenv install 2.6.3`
 
-## Acknowledgements
-Credits go to 
-- [Mr Eric Mbouwe](https://github.com/EricMbouwe), [Emmanuel Kamala](https://github.com/emmanuelkamala) and [Marcelo Araújo](https://github.com/marcelomaidden)(Microverse students) for their help to resolve the bugs.
-- All my standup team for their help.
-- All TSE who reviewed my project.
-- All those helped me to resolve bugs.
+  `undefined method 'signed_id' for nil:NilClass`
+  this is caused by no record in the active storage
+  solution: rails db:reset 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/IBUNHABIBU/TZ-social-events-booking.svg?style=flat-square
-[contributors-url]: https://github.com/IBUNHABIBU/TZ-social-events-booking/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/IBUNHABIBU/TZ-social-events-booking.svg?style=flat-square
-[forks-url]: https://github.com/IBUNHABIBU/TZ-social-events-booking/network/members
-[stars-shield]: https://img.shields.io/github/stars/IBUNHABIBU/TZ-social-events-booking.svg?style=flat-square
-[stars-url]: https://github.com/IBUNHABIBU/TZ-social-events-booking/stargazers
-[issues-shield]: https://img.shields.io/github/issues/IBUNHABIBU/TZ-social-events-booking.svg?style=flat-square
-[issues-url]: https://github.com/IBUNHABIBU/TZ-social-events-booking/issues
+  State changed from starting to crashed
+  error code=H10
+  The above error was caused by typing error of variables
+  instead of :amazon I typed :amazone in production.rb file
 
+  web: rake db:migrate && bin/rails server -b 0.0.0.0 -p { PORT: -3000 } && bin/rails css:watch
 ## 📝 License
+This project is [MIT](LICENCE) licensed.
 
-This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+[contributors-shield]: https://img.shields.io/github/contributors/IBUNHABIBU/lifestyle_articles.svg?style=flat-square
+[contributors-url]: https://github.com/IBUNHABIBU/lifestyle_articles/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/IBUNHABIBU/lifestyle_articles.svg?style=flat-square
+[forks-url]: https://github.com/IBUNHABIBU/lifestyle_articles/network/members
+[stars-shield]: https://img.shields.io/github/stars/IBUNHABIBU/lifestyle_articles.svg?style=flat-square
+[stars-url]: https://github.com/IBUNHABIBU/lifestyle_articles/stargazers
+[issues-shield]: https://img.shields.io/github/issues/IBUNHABIBU/lifestyle_articles.svg?style=flat-square
+[issues-url]: https://github.com/IBUNHABIBU/lifestyle_articles/issues
