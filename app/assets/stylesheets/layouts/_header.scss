@@ -64,11 +64,17 @@
           justify-content: space-between;
           
          .create {
-            text-decoration: wavy;
             a{
                 text-transform: capitalize;
                 text-decoration: wavy;
-                color: #f76107;
+                
+                color: #787980;
+
+                &:hover {
+                    text-decoration: wavy;
+                    color: #f9a70d;
+                    border-bottom: 4px solid #787980;
+                }
             }
           }
           .dropdown {
