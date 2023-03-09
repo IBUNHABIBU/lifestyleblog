@@ -83,7 +83,7 @@ Navigate to the project folder make sure Rspec is installed and then run the fol
 
 `$rspec -f d` 
 
-## [Live demo](https://lifestylearticle.herokuapp.com/ "Of the project") of the project
+## [Live demo](https://darlive.onrender.com "Of the project") of the project
 
 ## link to  [Video presentation](https://www.loom.com/share/ee056e3f2c984839a9c8a463381c46e5 "Loom")
 
