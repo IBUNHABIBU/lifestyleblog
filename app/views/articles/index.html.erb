@@ -1,17 +1,17 @@
 <div class="home">
    <div class="home__top">
       <div class="slider">
-         <% @most_rated_articles.each do |article| %>
+         
             <div class="slider__overlay"></div>
-            <div class="slider__bg" <% if article.image.attached? %>style="background: url(<%= url_for(article.image) %>);background-repeat: no-repeat; background-size: 100% 100%;"<% end %>>
+            <div class="slider__bg" <% if @most_rated_articles.image.attached? %>style="background: url(<%= url_for(@most_rated_articles.image) %>);background-repeat: no-repeat; background-size: 100% 100%;"<% end %>>
                <div class="slider__bg__title" id="rated_title">
-                  <%=  link_to "#{article.title}", article_path(article), class:"title-link" %>
+                  <%=  link_to "#{@most_rated_articles.title}", article_path(@most_rated_articles), class:"title-link" %>
                </div>
                <div class="slider__bg__content">
-                     <%= truncate(article.content, length:100, separator:' ') %>
+                     <%= truncate(@most_rated_articles.content, length:100, separator:' ') %>
                </div>
             </div>    
-         <% end %>
+         
       </div>
       <div class="weather">
            <%= image_tag('weather.jpg', :alt => "weather pic") %>
