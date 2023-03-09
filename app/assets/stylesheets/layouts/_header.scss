@@ -63,7 +63,14 @@
           align-items: center;
           justify-content: space-between;
           
-
+         .create {
+            text-decoration: wavy;
+            a{
+                text-transform: capitalize;
+                text-decoration: wavy;
+                color: #f76107;
+            }
+          }
           .dropdown {
             position: relative;
             display: flex;
