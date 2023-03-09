@@ -91,6 +91,20 @@ Navigate to the project folder make sure Rspec is installed and then run the fol
 
 ![screenshot](https://github.com/IBUNHABIBU/deployblog/blob/dev/app/assets/images/ERD__articles.png)
 
+## Useful Commands
+
+| Command | Description |
+|---------|-------------|
+| `rails new . --css=sass --javascript=esbuild --database=postgresql` | create new project inside current directory |
+| `bundle install` | Install project dependencies |
+| `sudo service postgresql start` | Starting the database |
+| `rails db:migrate` | Database migration |
+| `rails server` | start the server |
+| `rubocop -a` | Fix all the lint errors automatically |
+| `bundle exec rspec` | Run rspec tests |
+| `EDITOR='code --wait' rails credentials:edit` | Edit credentials |
+| `rails routes | grep users` | check routes of the specific resource |
+
 ## Author
 * Github: [IBUNHABIBU](https://github.com/IBUNHABIBU)
 * Twitter: [@ibunhabibu](https://twitter.com/Ibunhabibu)
