@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.all
     @recent_articles = Article.recent
-    @most_rated_articles = Article.most_rated
+    @most_rated_articles = Article.all
   end
 
   # GET /articles/1
