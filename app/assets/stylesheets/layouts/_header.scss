@@ -68,7 +68,7 @@
                 text-transform: capitalize;
                 text-decoration: wavy;
                 
-                color: var(--color-nav-items);
+                color: $color-nav-items;
 
                 &:hover {
                     text-decoration: wavy;
@@ -108,7 +108,7 @@
                 position: relative;
                 top: 0.2rem;
                 font-size: 1.6rem;
-                color: var(--color-nav-items);
+                color: $color-nav-items;
             }
 
             .dropdown-menu {
