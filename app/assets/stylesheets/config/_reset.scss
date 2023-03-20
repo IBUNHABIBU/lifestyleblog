@@ -19,9 +19,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  color: var(--color-white);
-  line-height: var(--line-height-body);
-  font-family: var(--font-family-montserrat);
+  color: $color-white;
+  line-height: $line-height-body;
+  font-family: $font-family-montserrat;
 }
 
 img,
