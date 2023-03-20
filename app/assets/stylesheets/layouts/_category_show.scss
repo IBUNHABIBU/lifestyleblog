@@ -3,9 +3,7 @@
     &__container {
         &__flex {
             display:flex;
-            flex-wrap:wrap;
-            border-top:8px solid #4e443f;
-
+            flex-wrap:wrap;       
             .item {
                 display:flex;
                 width:667px;
@@ -16,12 +14,14 @@
                     height:268px;
                 }
 
+                border: 0.4px solid var(--color-nav-items);
                 .content {
                     width:50%;
                     height:300px;
                     padding-left:1rem;
 
                     &__category {
+                        
                         .category--name {
                             font-weight:bold;
                             border-bottom:3px solid #9a9014;
@@ -52,6 +52,7 @@
                     &__body {
                         font-size: 1rem;
                         color:#756d69;
+                        
                     }
                  
                }
