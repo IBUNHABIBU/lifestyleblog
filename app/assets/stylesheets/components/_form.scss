@@ -95,7 +95,7 @@
                         span {
                             transform: translateX(-10px) translateY(-34px);
                             font-size: 0.8rem;
-                            color: var(--color-text-section);
+                            color: $color-text-section;
                         }
                         i {
                             height: 90%;
@@ -113,7 +113,7 @@
                 padding: 20px 10px 10px;
                 font-size: 1em;
                 pointer-events: none;
-                color: var(--color-text-muted);
+                color: $color-text-muted;
                 letter-spacing: 0.05rem;
                 transition: 0.5s;
             }
@@ -123,7 +123,7 @@
                 padding: 20px 10px 10px;
                 font-size: 1em;
                 pointer-events: none;
-                color: var(--color-text-muted);
+                color: $color-text-muted;
                 letter-spacing: 0.05rem;
                 transition: 0.5s;
             }
@@ -135,7 +135,7 @@
                 bottom: 0;
                 width: 100%;
                 height: 2px;
-                background-color: var(--color-text-section);
+                background-color: $color-text-section;
                 border-radius: 4px;
                 transition: 0.5s;
                 pointer-events: none;
@@ -151,10 +151,10 @@
             a {
                 margin: 10px 0;
                 font-size: 1rem;
-                color: var(--color-text-muted);
+                color: $color-text-muted;
 
                 &:hover, &:nth-child(2) {
-                    color: var(--color-text-section);
+                    color: $color-text-section;
                 }
             }
         }
