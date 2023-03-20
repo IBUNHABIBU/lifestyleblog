@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-xxl);
+  font-size: $font-size-xxl;
 }
 
 h3 {
@@ -65,14 +65,14 @@ h4 {
 }
 
 a {
-  color: var(--color-primary);
+  color: $color-primary;
   text-decoration: none;
   transition: color 200ms;
 
   &:hover,
   &:focus,
   &:active {
-    color: var(--color-primary-rotate);
+    color: $color-primary-rotate;
   }
 }
 
