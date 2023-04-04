@@ -12,7 +12,7 @@ class Article < ApplicationRecord
       left_joins(:likes)
         .group(:id)
         .order('COUNT(likes.id) DESC')
-        .first
+        .limit(1)
   }
 
 end
