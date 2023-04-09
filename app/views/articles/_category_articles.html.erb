@@ -1,4 +1,9 @@
 <div class="category-show__container__flex">
+  <% if obj.empty? %>
+      <div class="empty-message">
+          <h6>No article in this category you can <%= link_to 'create a new one', new_article_path %></h6>
+      </div>
+  <% end %>
     <% obj.each do |article| %>
         <div class="item">
             <div class="image">

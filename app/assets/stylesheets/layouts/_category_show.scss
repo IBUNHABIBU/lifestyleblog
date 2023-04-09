@@ -3,7 +3,18 @@
     &__container {
         &__flex {
             display:flex;
-            flex-wrap:wrap;       
+            flex-wrap:wrap;    
+            
+            .empty-message {
+                width:100%;
+                height:100%;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                font-size:1.5rem;
+                color:#756d69;
+                padding-top: 4rem;
+            }
             .item {
                 display:flex;
                 width:667px;
