@@ -143,6 +143,8 @@ GEM
     mini_portile2 (2.8.1)
     minitest (5.17.0)
     msgpack (1.6.0)
+    net-http (0.3.2)
+      uri
     net-imap (0.3.4)
       date
       net-protocol
@@ -250,6 +252,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
+    uri (0.12.1)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -283,6 +286,7 @@ DEPENDENCIES
   image_processing (~> 1.2)
   jbuilder
   jsbundling-rails
+  net-http
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
